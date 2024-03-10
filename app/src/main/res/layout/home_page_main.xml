@@ -11,8 +11,8 @@
         android:id="@+id/lang1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView3"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
         android:text="English" />
     <CheckBox
         android:id="@+id/lang2"
