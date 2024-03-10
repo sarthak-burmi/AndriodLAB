@@ -1,0 +1,73 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/lang1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_marginTop="16dp"
+        android:text="English" />
+    <CheckBox
+        android:id="@+id/lang2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lang1"
+        android:layout_marginTop="8dp"
+        android:text="Hindi" />
+    <CheckBox
+        android:id="@+id/lang3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lang2"
+        android:layout_marginTop="8dp"
+        android:text="German" />
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lang3"
+        android:layout_marginTop="16dp">
+        <RadioButton
+            android:id="@+id/maleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/femaleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/welcomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_below="@id/genderRadioGroup"
+        android:layout_marginTop="98dp"
+        android:backgroundTint="#F8803E"
+        android:text="Get Started"
+        android:textColorHighlight="#FA5521"
+        android:textColorLink="#EF4813" />
+
+    <TextView
+        android:id="@+id/display_male_lang"
+        android:layout_width="357dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/genderRadioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="33dp"
+        android:textAlignment="textStart" />
+
+</RelativeLayout>
